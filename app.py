@@ -7,7 +7,7 @@ st.title("Generador de Retratos Artísticos")
 st.sidebar.write("Opciones de Generación")
 
 num_images = st.sidebar.slider("Número de imágenes", 1, 16, 4)
-latent_dim = 128
+latent_dim = 32
 
 if st.button("Generar Imágenes"):
     ort_session = ort.InferenceSession("generator.onnx")
