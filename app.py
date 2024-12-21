@@ -27,3 +27,4 @@ if st.button("Generar Imágenes"):
         ax.imshow((onnx_output[0][i] + 1) / 2)  # Transformación para visualizar
         ax.axis("off")
     st.pyplot(fig)
+
